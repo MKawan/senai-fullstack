@@ -62,6 +62,7 @@ NEXUS-STORE/
 ```
 
 📸 Capturas de Tela
+
 Página Inicial
 ![tela inicial](screenshorts/image2.png)
 
@@ -105,14 +106,14 @@ O projeto aplica conhecimentos de:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+git clone https://github.com/MKawan/senai-fullstack.git
 ```
 
 Depois, abra o arquivo index.html no navegador ou utilize o Live Server no Visual Studio Code.
 
 ## 🌐 Projeto
 
-🔗 Acesse o repositório no GitHub
+[🔗 Acesse o repositório no GitHub](https://github.com/MKawan/senai-fullstack/tree/main/cond_front_end/nexus-store-front)
 
 ## 👨‍💻 Autor
 
