@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nome": "Notebook Gamer",
+    "descricao": "Notebook para jogos e produtividade com excelente desempenho.",
+    "categoria": "Eletrônicos",
+    "preco": 5299.9,
+    "imagem": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "nome": "PlayStation 5",
+    "descricao": "Console de videogame de última geração com gráficos avançados.",
+    "categoria": "Jogos",
+    "preco": 4199.9,
+    "imagem": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "nome": "Headset Gamer",
+    "descricao": "Headset com áudio imersivo e microfone para comunicação.",
+    "categoria": "Eletrônicos",
+    "preco": 389.9,
+    "imagem": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "nome": "Controle Sem Fio",
+    "descricao": "Controle compatível com consoles e dispositivos de forma prática.",
+    "categoria": "Jogos",
+    "preco": 249.9,
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTle88csgwLDPYQR5ZSeSQa31xOzwEseNCvUyn2lF2ALiofsXdyaiM5Nmk&s=10"
+  },
+  {
+    "id": 5,
+    "nome": "Teste",
+    "descricao": "Notebook para jogos e produtividade com excelente desempenho.",
+    "categoria": "Eletrônicos",
+    "preco": 5299.9,
+    "imagem": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 6,
+    "nome": "Headset Kraken Pro V2",
+    "descricao": "Headset gamer com excelente qualidade de áudio e conforto para longas sessões de jogos.",
+    "categoria": "headsets",
+    "preco": 249.9,
+    "imagem": "https://images.unsplash.com/photo-1599669454699-248893623440?w=400&h=300&fit=crop&auto=format"
+  },
+  {
+    "id": 7,
+    "nome": "Mouse DeathAdder V3",
+    "descricao": "Mouse gamer de alta precisão com excelente desempenho e resposta rápida.",
+    "categoria": "mouses",
+    "preco": 289.9,
+    "imagem": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop&auto=format"
+  },
+  {
+    "id": 8,
+    "nome": "Teclado Huntsman V2",
+    "descricao": "Teclado gamer mecânico de alta performance com resposta rápida e construção premium.",
+    "categoria": "teclados",
+    "preco": 649.9,
+    "imagem": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=300&fit=crop&auto=format"
+  }
+]

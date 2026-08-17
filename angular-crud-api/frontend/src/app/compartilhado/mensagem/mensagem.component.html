@@ -1,0 +1,13 @@
+<div
+  *ngIf="mensagem"
+  class="alert mt-3"
+  [ngClass]="{
+    'alert-success': tipo === 'sucesso',
+    'alert-danger': tipo === 'erro',
+    'alert-warning': tipo === 'aviso',
+    'alert-info': tipo === 'informacao'
+  }"
+  role="alert"
+>
+  {{ mensagem }}
+</div>

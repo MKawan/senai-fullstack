@@ -1,0 +1,69 @@
+<app-cabecalho></app-cabecalho>
+
+<div class="container py-4">
+  <div class="mb-4">
+    <h1 class="h3 mb-1">{{ editandoId ? 'Editar Produto' : 'Novo Produto' }}</h1>
+    <p class="text-muted mb-0">
+      {{ editandoId ? 'Altere as informações do produto selecionado.' : 'Preencha os dados para cadastrar um novo
+      produto.' }}
+    </p>
+  </div>
+
+  <app-carregamento *ngIf="carregando"></app-carregamento>
+  <app-mensagem *ngIf="mensagemErro" [mensagem]="mensagemErro" tipo="erro"></app-mensagem>
+  <app-mensagem *ngIf="mensagemSucesso" [mensagem]="mensagemSucesso" tipo="sucesso"></app-mensagem>
+
+  <div class="card shadow-sm border-0 mb-4" *ngIf="!carregando || editandoId">
+    <div class="card-body">
+      <form [formGroup]="produtoForm" (ngSubmit)="salvar()">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" class="form-control" formControlName="nome" placeholder="Ex: Notebook Gamer">
+            <div *ngIf="produtoForm.get('nome')?.invalid && produtoForm.get('nome')?.touched"
+              class="text-danger small mt-1">
+              O nome é obrigatório.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="categoria" class="form-label">Categoria</label>
+            <input type="text" id="categoria" class="form-control" formControlName="categoria"
+              placeholder="Ex: Eletrônicos">
+            <div *ngIf="produtoForm.get('categoria')?.invalid && produtoForm.get('categoria')?.touched"
+              class="text-danger small mt-1">
+              A categoria é obrigatória.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="descricao" class="form-label">Descrição</label>
+            <textarea id="descricao" class="form-control" formControlName="descricao" rows="2"></textarea>
+            <div *ngIf="produtoForm.get('descricao')?.invalid && produtoForm.get('descricao')?.touched"
+              class="text-danger small mt-1">
+              A descrição é obrigatória.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="preco" class="form-label">Preço (R$)</label>
+            <input type="number" id="preco" class="form-control" formControlName="preco" step="0.01">
+            <div *ngIf="produtoForm.get('preco')?.invalid && produtoForm.get('preco')?.touched"
+              class="text-danger small mt-1">
+              O preço é obrigatório e deve ser maior que zero.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="imagem" class="form-label">URL da Imagem</label>
+            <input type="url" id="imagem" class="form-control" formControlName="imagem" placeholder="https://...">
+          </div>
+        </div>
+        <div class="mt-4 d-flex gap-2">
+          <button type="submit" class="btn btn-primary" [disabled]="produtoForm.invalid || carregando">
+            {{ editandoId ? 'Salvar Alterações' : 'Cadastrar Produto' }}
+          </button>
+          <a routerLink="/produtos" class="btn btn-outline-secondary">
+            Cancelar e Voltar
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
